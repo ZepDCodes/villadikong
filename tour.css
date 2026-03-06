@@ -1,0 +1,62 @@
+:root {
+    --color1: #6cb5cb;
+    --color2: #b7d8de; 
+    --color3: #fbf5ef; 
+    --color4: #fe7236; 
+}
+.virtual-tour {
+  height: 100vh; /* full screen height */
+  background: white; /* white background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center vertically */
+  align-items: center; /* center horizontally */
+  text-align: center;
+  padding: 20px;
+}
+
+.tour-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: 'Merriweather', serif;
+}
+
+.tour-container {
+  padding: 20px;
+  position: relative;
+  width: 90%;
+  max-width: 830px;
+  border: 1px solid #6cb5cb;
+  border-radius: 35px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tour-container img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 35px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.tour-container h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.next-btn {
+  margin-top: 25px;
+  padding: 12px 24px;
+  font-size: 18px;
+  background: #6cb5cb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.next-btn:hover {
+  background: #006666;
+}

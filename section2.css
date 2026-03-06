@@ -1,0 +1,57 @@
+:root {
+  --color1: #6cb5cb;
+  --color2: #b7d8de; 
+  --color3: #fbf5ef; 
+  --color4: #fe7236; 
+}
+
+.section-2 {
+  height: 100vh;
+  background: url(images/swirl_background.png) no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 1200px;
+}
+
+.about-left {
+  font-family: Raleway;
+}
+
+.map-location-text{
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-style: italic;
+}
+.map-container {
+  margin: 20px 0;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  border: 2px solid #ccc;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.about-right {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  border-left: 2px solid #b7d8de;
+  padding-left: 50px;
+}
+.about-right #about-us{
+    font-size: 4rem;
+}
