@@ -1,0 +1,113 @@
+:root {
+    --color1: #6cb5cb;
+    --color2: #b7d8de; 
+    --color3: #fbf5ef; 
+    --color4: #fe7236; 
+}
+body{
+    background-image: url(background_image/background_aloha.png);
+}
+.review-container, .display-container {
+    font-family: Raleway;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #6cb5cb;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+   
+}
+
+.review-container h2, .display-container h2 {
+    font-family: Raleway;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.review-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.review-form input[type="text"],
+.review-form textarea {
+    width: 96%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 3px solid var(--color1);
+    border-radius: 6px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    font-size: 25px;
+    color: #ccc;
+    cursor: pointer;
+    padding: 0 10px;
+    transition: color 0.3s;
+}
+
+.stars input:checked ~ label {
+    color: gold;
+}
+
+.stars label:hover,
+.stars label:hover ~ label {
+    color: #6cb5cb;
+}
+
+.review-form button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: #6cb5cb;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.review-form button:hover {
+    background: #fe7236;
+}
+
+.review-item {
+    border-bottom: 3px solid #fe7236;
+    padding: 10px 0;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.review-name {
+    font-weight: bold;
+}
+
+.review-rating {
+    color: gold;
+    font-size: 18px;
+}
+
+.review-feedback {
+    margin: 5px 0;
+    color: #333;
+}
+
+p{
+    color: #9e9e9e;
+}
